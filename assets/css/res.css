@@ -1,0 +1,103 @@
+/* tablet */
+@media(max-width: 64.0625em){
+    #banner .socials-list{
+        padding-top: 86%;
+    }
+}
+
+/* mobile */
+@media(max-width: 46.1875em){
+    #nav{
+        display: none;
+    }
+    
+    #banner .banner-text .banner-header{
+        font-size: 36px;
+    }
+
+    #s-nav{
+        z-index: 101;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        background-color: #000;
+        height: 100%;
+        transition:  all 0.2s linear;
+    }
+
+    .bg-menu{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        z-index: 100;
+    }
+
+    #s-nav li:first-child{
+        padding: 16px;
+    }
+
+    #s-nav li a{
+        color: #fff;
+        text-transform: uppercase;
+        padding: 8px 16px;
+        width: 100%;
+        display: block;
+    }
+
+    #mobile-menu{
+        display: block;
+        float: right;
+        line-height: 24px;
+        padding: 16px 24px;     
+    }
+
+    .s-nav{
+        animation: menuMove 5s infinite;  
+    }
+
+    #banner .socials-list{
+        padding-top: 124%;
+    }
+
+    .team-card .contact-btn{
+        padding: 12px 0;
+    }
+
+    .s-full-width{
+        width: 100%;
+    }
+
+    .content-section .design-img{
+        margin-top: 20px;
+    }
+
+    .s-mt-16{
+        margin-top: 16px
+    }
+
+    .pricing-design-btn{
+        padding: 16px;
+    }
+
+    .socials-list-ft a i[class*="ti-"]{
+        padding: 16px;
+    }
+
+    #footer p a{
+        padding: 16px 0;
+    }
+
+    @keyframes menuMove {
+        from{
+            width: 0;
+        }
+
+        to{
+            width: 200px;
+        }
+    }
+}
